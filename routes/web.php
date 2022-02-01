@@ -14,7 +14,7 @@ use App\Http\Controllers\VistasController;
 |
 */
 
-Route::get('/index', [VistasController::class, 'index'])->name('index');
+Route::get('/', [VistasController::class, 'index'])->name('index');
 
 Route::get('/contacto',[VistasController::class,'contacto'])->name('contacto');
 
