@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VistasController;
-
+use Illuminate\Support\Facades\Route;
+use App\Models\Lugares;
+use App\Http\Controllers\CatfacsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,12 +14,6 @@ use App\Http\Controllers\VistasController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [VistasController::class, 'index'])->name('index');
-
-Route::get('/contacto',[VistasController::class,'contacto'])->name('contacto');
-
-Route::get('/posts',[VistasController::class,'posts'])->name('posts');
-
-Route::get('/sobreN',[VistasController::class,'sobreN'])->name('sobreN');
+Route::get('/',[VistasController::class,'index'])->name('index');
+Route::get('/Vista1',[CatfacsController::class,'Vista1'])->name('Vista1');
 
